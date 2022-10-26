@@ -18,6 +18,7 @@ function onSearch(evt) {
   if (country === '') {
     refs.list.innerHTML = '';
     refs.card.innerHTML = '';
+    return;
   }
   fetchCountries(country)
     .then(data => {
